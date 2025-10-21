@@ -56,7 +56,7 @@ function(rmf_site_generate)
             --export-sdf ${rmf_site_gen_OUTPUT_WORLD_DIR}
             --export-nav ${rmf_site_gen_OUTPUT_NAV_DIR}
     DEPENDS ${rmf_site_gen_INPUT_MAP} ${rmf_site_gen_DEPENDS}
-    VERBATIM
+    VERBATIM  
   )
 
   # Define a unique target name for this generation task
