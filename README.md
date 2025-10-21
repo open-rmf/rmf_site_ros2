@@ -35,3 +35,5 @@ ros2 launch rmf_site_demos office.launch.xml
 ```bash
 ros2 launch rmf_site_demos hotel.launch.xml
 ```
+
+Do ensure that the repositories listed in [rmf.repos](https://github.com/open-rmf/rmf/blob/main/rmf.repos) are cloned and built in the same workspace for the simulation to launch.
