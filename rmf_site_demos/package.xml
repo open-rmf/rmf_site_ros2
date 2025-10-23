@@ -12,6 +12,7 @@
 
   <depend>rmf_demos</depend>
   <depend>rmf_demos_gz</depend>
+  <depend>rmf_site_map_server</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
