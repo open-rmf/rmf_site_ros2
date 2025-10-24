@@ -1,5 +1,6 @@
-# rmf_site_cmake
-Navigation graph generator for building map files using the site editor
+# RMF Site integration with ROS 2
+
+Generate simulation worlds and navigation graphs from [RMF Site Editor](https://github.com/open-rmf/rmf_site) projects.
 
 ### Setup
 
@@ -16,7 +17,7 @@ pip install git+https://github.com/colcon/colcon-cargo.git --break-system-packag
 pip install git+https://github.com/colcon/colcon-ros-cargo.git --break-system-packages
 
 # Install rmf_site_editor
-cargo install --git https://github.com/open-rmf/rmf_site
+cargo install rmf_site_editor
 ```
 
 You can now build your maps package with `rmf_site_cmake` in the same workspace.
