@@ -5071,7 +5071,7 @@
     "guided": {
       "graphs": {
         "298": {
-          "name": "0",
+          "name": "tinyRobot",
           "color": [
             1.0,
             0.50000024,
@@ -5079,7 +5079,7 @@
           ]
         },
         "310": {
-          "name": "1",
+          "name": "cleanerBotA",
           "color": [
             0.60000014,
             1.0,
@@ -5087,7 +5087,7 @@
           ]
         },
         "364": {
-          "name": "2",
+          "name": "deliveryRobot",
           "color": [
             0.6,
             0.79999995,
