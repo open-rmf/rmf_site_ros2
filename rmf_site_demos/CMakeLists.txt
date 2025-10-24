@@ -16,7 +16,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rmf_site_cmake REQUIRED)
 
-# Copy source maps to the install directory
+# Copy source maps and launch folders to the install directory
 install(DIRECTORY
   launch
   maps

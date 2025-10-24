@@ -30,11 +30,6 @@ The `rmf_site_demos` package provides examples of running RMF demo worlds with n
 
 You will also need to clone in `rmf_site_map_server` and `rclrs`, then set up the workspace with the necessary dependencies. The steps below assume you're using ROS 2 Jazzy.
 ```
-sudo apt install -y git libclang-dev python3-pip python3-vcstool # libclang-dev is required by bindgen
-# Install these plugins for cargo and colcon:
-pip install git+https://github.com/colcon/colcon-cargo.git
-pip install git+https://github.com/colcon/colcon-ros-cargo.git
-
 cd ~/rmf_ws
 git clone https://github.com/open-rmf/rmf_site_map_server.git src/rmf_site_map_server
 git clone https://github.com/ros2-rust/ros2_rust.git src/ros2_rust
