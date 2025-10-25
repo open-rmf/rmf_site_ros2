@@ -9,7 +9,7 @@
   <!-- Common launch -->
   <include file="$(find-pkg-share rmf_demos)/common.launch.xml">
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
-    <arg name="viz_config_file" value ="$(find-pkg-share rmf_demos)/include/office/office.rviz"/>
+    <arg name="viz_config_file" value ="$(find-pkg-share rmf_site_demos)/config/office/office.rviz"/>
     <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/maps/office/office.site.json"/>
     <arg name="use_reservation_node" value="true"/>
     <arg name="use_site_map" value="true"/>
@@ -27,7 +27,7 @@
     <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
       <arg name="nav_graph_file" value="$(find-pkg-share rmf_site_demos)/maps/office/nav_graphs/tinyRobot.nav.yaml" />
-      <arg name="config_file" value="$(find-pkg-share rmf_demos)/config/office/tinyRobot_config.yaml"/>
+      <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/config/office/tinyRobot_config.yaml"/>
     </include>
   </group>
 

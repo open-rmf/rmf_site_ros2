@@ -20,6 +20,7 @@ find_package(rmf_site_cmake REQUIRED)
 install(DIRECTORY
   launch
   maps
+  config
   DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}
 )
 

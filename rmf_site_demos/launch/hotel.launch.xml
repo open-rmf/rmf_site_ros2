@@ -9,7 +9,7 @@
   <!-- Common launch -->
   <include file="$(find-pkg-share rmf_demos)/common.launch.xml">
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
-    <arg name="viz_config_file" value ="$(find-pkg-share rmf_demos)/include/hotel/hotel.rviz"/>
+    <arg name="viz_config_file" value ="$(find-pkg-share rmf_site_demos)/config/hotel/hotel.rviz"/>
     <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/maps/hotel/hotel.site.json"/>
     <arg name="use_site_map" value="true"/>
   </include>
@@ -26,7 +26,7 @@
     <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
       <arg name="nav_graph_file" value="$(find-pkg-share rmf_site_demos)/maps/hotel/nav_graphs/cleanerBotA.nav.yaml" />
-      <arg name="config_file" value="$(find-pkg-share rmf_demos)/config/hotel/cleanerBotA_config.yaml"/>
+      <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/config/hotel/cleanerBotA_config.yaml"/>
     </include>
   </group>
 
@@ -35,7 +35,7 @@
     <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
       <arg name="nav_graph_file" value="$(find-pkg-share rmf_site_demos)/maps/hotel/nav_graphs/tinyRobot.nav.yaml" />
-      <arg name="config_file" value="$(find-pkg-share rmf_demos)/config/hotel/tinyRobot_config.yaml"/>
+      <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/config/hotel/tinyRobot_config.yaml"/>
     </include>
   </group>
 
@@ -44,7 +44,7 @@
     <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
       <arg name="nav_graph_file" value="$(find-pkg-share rmf_site_demos)/maps/hotel/nav_graphs/deliveryRobot.nav.yaml" />
-      <arg name="config_file" value="$(find-pkg-share rmf_demos)/config/hotel/deliveryRobot_config.yaml"/>
+      <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/config/hotel/deliveryRobot_config.yaml"/>
     </include>
   </group>
 
