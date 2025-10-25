@@ -11,6 +11,7 @@
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
     <arg name="viz_config_file" value ="$(find-pkg-share rmf_demos)/include/office/office.rviz"/>
     <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/maps/office/office.site.json"/>
+    <arg name="use_reservation_node" value="true"/>
     <arg name="use_site_map" value="true"/>
   </include>
 
