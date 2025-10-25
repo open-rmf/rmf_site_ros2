@@ -20,11 +20,6 @@ pip install git+https://github.com/colcon/colcon-ros-cargo.git --break-system-pa
 cargo install rmf_site_editor
 ```
 
-You can now build your maps package with `rmf_site_cmake` in the same workspace.
-```bash
-colcon build
-```
-
 ### Try an example!
 
 The `rmf_site_demos` package provides examples of running RMF demo worlds with navigation graphs generated using the site editor. Ensure that you have followed the instructions [here](https://github.com/open-rmf/rmf?tab=readme-ov-file#building-from-source) to get the necessary RMF dependencies set up. Do ensure that the repositories listed in [rmf.repos](https://github.com/open-rmf/rmf/blob/main/rmf.repos) are cloned and built in the same workspace for the simulation to launch.
