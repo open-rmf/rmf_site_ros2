@@ -6,7 +6,7 @@ Generate simulation worlds and navigation graphs from [RMF Site Editor](https://
 
 Prepare your maps package and its `CMakeLists.txt`. You may use the `rmf_site_generate` to generate a world file and navigation graphs from a specific map, or the `rmf_site_generate_map_package` command to create a maps package containing relevant world files and navigation graphs from a folder of map files. Refer to the `rmf_site_demos` package for usage examples in your map package `CMakeLists.txt`.
 
-### Build
+### System Dependencies
 
 Make sure to have the dependencies installed:
 
