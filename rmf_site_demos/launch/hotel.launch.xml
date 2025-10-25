@@ -1,0 +1,51 @@
+<?xml version='1.0' ?>
+
+<launch>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="failover_mode" default="false"/>
+  <arg name="sim_update_rate" default='100'/>
+
+  <!-- Common launch -->
+  <include file="$(find-pkg-share rmf_demos)/common.launch.xml">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="viz_config_file" value ="$(find-pkg-share rmf_site_demos)/config/hotel/hotel.rviz"/>
+    <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/maps/hotel/hotel.site.json"/>
+    <arg name="use_site_map" value="true"/>
+  </include>
+
+  <!-- Simulation launch -->
+  <include file="$(find-pkg-share rmf_demos_gz)/simulation.launch.xml">
+    <arg name="map_name" value="hotel" />
+    <arg name="map_package" value="rmf_site_demos"/>
+    <arg name="sim_update_rate" value="$(var sim_update_rate)"/>
+  </include>
+
+  <!-- cleanerBotA fleet adapter -->
+  <group>
+    <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_site_demos)/maps/hotel/nav_graphs/cleanerBotA.nav.yaml" />
+      <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/config/hotel/cleanerBotA_config.yaml"/>
+    </include>
+  </group>
+
+  <!-- TinyRobot fleet adapter -->
+  <group>
+    <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_site_demos)/maps/hotel/nav_graphs/tinyRobot.nav.yaml" />
+      <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/config/hotel/tinyRobot_config.yaml"/>
+    </include>
+  </group>
+
+  <!-- DeliveryRobot fleet adapter -->
+  <group>
+    <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_site_demos)/maps/hotel/nav_graphs/deliveryRobot.nav.yaml" />
+      <arg name="config_file" value="$(find-pkg-share rmf_site_demos)/config/hotel/deliveryRobot_config.yaml"/>
+    </include>
+  </group>
+
+</launch>
