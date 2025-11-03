@@ -51,7 +51,7 @@ function(rmf_site_generate)
   # Add a custom command to run rmf_site_editor.
   add_custom_command(
     OUTPUT ${output_world_phony} ${output_nav_graphs_phony}
-    COMMAND rmf_site_editor
+    COMMAND GZ_SIM_RESOURCE_PATH=$ENV{GZ_SIM_RESOURCE_PATH} rmf_site_editor
             ${rmf_site_gen_INPUT_MAP}
             --export-sdf ${rmf_site_gen_OUTPUT_WORLD_DIR}
             --export-nav ${rmf_site_gen_OUTPUT_NAV_DIR}
