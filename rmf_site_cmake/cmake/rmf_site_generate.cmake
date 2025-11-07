@@ -19,7 +19,7 @@
 # ==============================================================================
 function(rmf_site_generate)
   set(options)
-  set(one_value_args INPUT_MAP OUTPUT_WORLD_DIR OUTPUT_NAV_DIR)
+  set(one_value_args INPUT_MAP OUTPUT_WORLD_DIR OUTPUT_NAV_DIR USER_EXECUTABLE)
   set(multi_value_args DEPENDS)
 
   cmake_parse_arguments(
@@ -48,15 +48,23 @@ function(rmf_site_generate)
   set(output_world_phony ${rmf_site_gen_OUTPUT_WORLD_DIR}/phony)
   set(output_nav_graphs_phony ${rmf_site_gen_OUTPUT_NAV_DIR}/phony)
 
-  # Add a custom command to run rmf_site_editor.
+  # Use user-defined site editor executable if provided
+  if (rmf_site_gen_USER_EXECUTABLE)
+    message(STATUS "rmf_site_generate: USER_EXECUTABLE argument provided, using ${rmf_site_gen_USER_EXECUTABLE} as executable.")
+    set(rmf_site_editor_executable ${rmf_site_gen_USER_EXECUTABLE})
+  else()
+    set(rmf_site_editor_executable rmf_site_editor)
+  endif()
+
+  # Add a custom command to run the site editor executable.
   add_custom_command(
     OUTPUT ${output_world_phony} ${output_nav_graphs_phony}
-    COMMAND GZ_SIM_RESOURCE_PATH=$ENV{GZ_SIM_RESOURCE_PATH} rmf_site_editor
+    COMMAND GZ_SIM_RESOURCE_PATH=$ENV{GZ_SIM_RESOURCE_PATH} ${rmf_site_editor_executable}
             ${rmf_site_gen_INPUT_MAP}
             --export-sdf ${rmf_site_gen_OUTPUT_WORLD_DIR}
             --export-nav ${rmf_site_gen_OUTPUT_NAV_DIR}
     DEPENDS ${rmf_site_gen_INPUT_MAP} ${rmf_site_gen_DEPENDS}
-    VERBATIM  
+    VERBATIM
   )
 
   # Define a unique target name for this generation task
@@ -89,7 +97,7 @@ endfunction()
 # ==============================================================================
 function(rmf_site_generate_map_package)
   set(options)
-  set(one_value_args INPUT_MAP_DIR OUTPUT_PACKAGE_DIR)
+  set(one_value_args INPUT_MAP_DIR OUTPUT_PACKAGE_DIR USER_EXECUTABLE)
   set(multi_value_args DEPENDS)
 
   cmake_parse_arguments(
@@ -106,6 +114,13 @@ function(rmf_site_generate_map_package)
   endif()
   if(NOT rmf_site_pkg_gen_OUTPUT_PACKAGE_DIR)
     message(FATAL_ERROR "rmf_site_generate_map_package: OUTPUT_PACKAGE_DIR argument is required.")
+  endif()
+
+  # Use user-defined site editor executable if provided
+  if (rmf_site_pkg_gen_USER_EXECUTABLE)
+    set(user_executable ${rmf_site_pkg_gen_USER_EXECUTABLE})
+  else()
+    set(user_executable rmf_site_editor)
   endif()
 
   # Consolidate all the relevant map files
@@ -132,6 +147,7 @@ function(rmf_site_generate_map_package)
       INPUT_MAP ${map_path}
       OUTPUT_WORLD_DIR ${output_world_dir}
       OUTPUT_NAV_DIR ${output_nav_dir}
+      USER_EXECUTABLE ${user_executable}
     )
 
   endforeach()
