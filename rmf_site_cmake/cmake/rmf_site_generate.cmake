@@ -53,7 +53,6 @@ function(rmf_site_generate)
     message(STATUS "rmf_site_generate: USER_EXECUTABLE argument provided, using ${rmf_site_gen_USER_EXECUTABLE} as executable.")
     set(rmf_site_editor_executable ${rmf_site_gen_USER_EXECUTABLE})
   else()
-    message(STATUS "rmf_site_generate: Using default rmf_site_editor binary as executable.")
     set(rmf_site_editor_executable rmf_site_editor)
   endif()
 
