@@ -1,0 +1,881 @@
+{
+  "format_version": "0.1",
+  "properties": {
+    "name": "test_mutex"
+  },
+  "levels": {
+    "1": {
+      "properties": {
+        "name": "L1",
+        "elevation": 0.0
+      },
+      "anchors": {
+        "3": {
+          "Translate2D": [
+            -8.63989,
+            10.099708
+          ]
+        },
+        "5": {
+          "Translate2D": [
+            17.693253,
+            9.978293
+          ]
+        },
+        "6": {
+          "Translate2D": [
+            15.520102,
+            -14.709453
+          ]
+        },
+        "7": {
+          "Translate2D": [
+            -7.71351,
+            -14.402232
+          ]
+        },
+        "11": {
+          "Translate2D": [
+            -5.340403,
+            7.0186024
+          ]
+        },
+        "12": {
+          "Translate2D": [
+            0.8547921,
+            7.0186024
+          ]
+        },
+        "13": {
+          "Translate2D": [
+            7.417651,
+            7.0186024
+          ]
+        },
+        "14": {
+          "Translate2D": [
+            7.417651,
+            4.631674
+          ]
+        },
+        "15": {
+          "Translate2D": [
+            7.417651,
+            2.2736425
+          ]
+        },
+        "16": {
+          "Translate2D": [
+            7.417651,
+            -0.16518068
+          ]
+        },
+        "17": {
+          "Translate2D": [
+            7.417651,
+            -2.623178
+          ]
+        },
+        "18": {
+          "Translate2D": [
+            7.417651,
+            -5.230376
+          ]
+        },
+        "20": {
+          "Translate2D": [
+            5.719731,
+            -5.328459
+          ]
+        },
+        "24": {
+          "Translate2D": [
+            9.523942,
+            -10.881554
+          ]
+        },
+        "25": {
+          "Translate2D": [
+            5.3814692,
+            -9.704372
+          ]
+        },
+        "26": {
+          "Translate2D": [
+            9.516338,
+            -7.9575214
+          ]
+        },
+        "27": {
+          "Translate2D": [
+            0.8548,
+            4.631674
+          ]
+        },
+        "28": {
+          "Translate2D": [
+            -5.3404,
+            4.631674
+          ]
+        },
+        "29": {
+          "Translate2D": [
+            0.8548,
+            2.2736425
+          ]
+        },
+        "30": {
+          "Translate2D": [
+            -5.3404,
+            2.2736425
+          ]
+        },
+        "31": {
+          "Translate2D": [
+            0.8548,
+            -0.16518068
+          ]
+        },
+        "32": {
+          "Translate2D": [
+            -5.3404,
+            -0.16518068
+          ]
+        },
+        "63": {
+          "Translate2D": [
+            0.8548,
+            -2.623178
+          ]
+        },
+        "64": {
+          "Translate2D": [
+            -5.3404,
+            -2.623178
+          ]
+        },
+        "69": {
+          "Translate2D": [
+            5.7718105,
+            -13.358332
+          ]
+        },
+        "76": {
+          "Translate2D": [
+            7.417651,
+            -3.9893594
+          ]
+        },
+        "77": {
+          "Translate2D": [
+            0.8823514,
+            -3.9893594
+          ]
+        },
+        "105": {
+          "Translate2D": [
+            7.3856072,
+            -7.483638
+          ]
+        },
+        "106": {
+          "Translate2D": [
+            7.374716,
+            -9.428231
+          ]
+        },
+        "107": {
+          "Translate2D": [
+            7.416977,
+            -11.365019
+          ]
+        },
+        "108": {
+          "Translate2D": [
+            7.4911275,
+            -13.260046
+          ]
+        }
+      },
+      "floors": {
+        "4": {
+          "anchors": [
+            3,
+            5,
+            6,
+            7
+          ]
+        }
+      },
+      "rankings": {
+        "floors": [
+          4
+        ]
+      }
+    }
+  },
+  "navigation": {
+    "guided": {
+      "graphs": {
+        "9": {
+          "name": "tinyRobot",
+          "color": [
+            1.0,
+            0.50000024,
+            0.3
+          ]
+        }
+      },
+      "ranking": [
+        9
+      ],
+      "lanes": {
+        "33": {
+          "anchors": [
+            11,
+            12
+          ],
+          "graphs": "All"
+        },
+        "34": {
+          "anchors": [
+            12,
+            13
+          ],
+          "mutex": 78,
+          "graphs": "All"
+        },
+        "35": {
+          "anchors": [
+            13,
+            14
+          ],
+          "mutex": 78,
+          "graphs": "All"
+        },
+        "36": {
+          "anchors": [
+            14,
+            15
+          ],
+          "mutex": 94,
+          "graphs": "All"
+        },
+        "37": {
+          "anchors": [
+            15,
+            16
+          ],
+          "mutex": 95,
+          "graphs": "All"
+        },
+        "38": {
+          "anchors": [
+            16,
+            17
+          ],
+          "mutex": 96,
+          "graphs": "All"
+        },
+        "48": {
+          "anchors": [
+            14,
+            27
+          ],
+          "mutex": 94,
+          "graphs": "All"
+        },
+        "49": {
+          "anchors": [
+            27,
+            28
+          ],
+          "graphs": "All"
+        },
+        "50": {
+          "anchors": [
+            15,
+            29
+          ],
+          "mutex": 95,
+          "graphs": "All"
+        },
+        "51": {
+          "anchors": [
+            29,
+            30
+          ],
+          "graphs": "All"
+        },
+        "52": {
+          "anchors": [
+            16,
+            31
+          ],
+          "mutex": 96,
+          "graphs": "All"
+        },
+        "53": {
+          "anchors": [
+            31,
+            32
+          ],
+          "graphs": "All"
+        },
+        "54": {
+          "anchors": [
+            12,
+            27
+          ],
+          "mutex": 78,
+          "graphs": "All"
+        },
+        "55": {
+          "anchors": [
+            27,
+            29
+          ],
+          "mutex": 94,
+          "graphs": "All"
+        },
+        "56": {
+          "anchors": [
+            29,
+            31
+          ],
+          "mutex": 95,
+          "graphs": "All"
+        },
+        "66": {
+          "anchors": [
+            17,
+            63
+          ],
+          "mutex": 97,
+          "graphs": "All"
+        },
+        "67": {
+          "anchors": [
+            63,
+            64
+          ],
+          "graphs": "All"
+        },
+        "68": {
+          "anchors": [
+            63,
+            31
+          ],
+          "mutex": 96,
+          "graphs": "All"
+        },
+        "89": {
+          "anchors": [
+            17,
+            76
+          ],
+          "mutex": 97,
+          "graphs": "All"
+        },
+        "90": {
+          "anchors": [
+            76,
+            18
+          ],
+          "graphs": "All"
+        },
+        "91": {
+          "anchors": [
+            77,
+            63
+          ],
+          "mutex": 97,
+          "graphs": "All"
+        },
+        "109": {
+          "anchors": [
+            18,
+            105
+          ],
+          "graphs": "All"
+        },
+        "110": {
+          "anchors": [
+            105,
+            106
+          ],
+          "graphs": "All"
+        },
+        "111": {
+          "anchors": [
+            106,
+            107
+          ],
+          "graphs": "All"
+        },
+        "112": {
+          "anchors": [
+            107,
+            108
+          ],
+          "graphs": "All"
+        },
+        "113": {
+          "anchors": [
+            108,
+            69
+          ],
+          "graphs": "All"
+        },
+        "114": {
+          "anchors": [
+            24,
+            107
+          ],
+          "graphs": "All"
+        },
+        "115": {
+          "anchors": [
+            106,
+            25
+          ],
+          "graphs": "All"
+        },
+        "116": {
+          "anchors": [
+            26,
+            105
+          ],
+          "graphs": "All"
+        },
+        "118": {
+          "anchors": [
+            18,
+            20
+          ],
+          "graphs": "All"
+        }
+      },
+      "locations": {
+        "71": {
+          "anchor": 20,
+          "tags": [
+            "Charger"
+          ],
+          "name": "TinyRobot_1_charger",
+          "graphs": "All"
+        },
+        "72": {
+          "anchor": 26,
+          "tags": [
+            "Charger"
+          ],
+          "name": "TinyRobot_2_charger",
+          "graphs": "All"
+        },
+        "73": {
+          "anchor": 25,
+          "tags": [
+            "Charger"
+          ],
+          "name": "TinyRobot_3_charger",
+          "graphs": "All"
+        },
+        "74": {
+          "anchor": 24,
+          "tags": [
+            "Charger"
+          ],
+          "name": "TinyRobot_4_charger",
+          "graphs": "All"
+        },
+        "75": {
+          "anchor": 69,
+          "tags": [
+            "Charger"
+          ],
+          "name": "TinyRobot_5_charger",
+          "graphs": "All"
+        },
+        "79": {
+          "anchor": 13,
+          "tags": [],
+          "name": "loc_2",
+          "mutex": 78,
+          "graphs": "All"
+        },
+        "80": {
+          "anchor": 12,
+          "tags": [],
+          "name": "loc_1",
+          "mutex": 78,
+          "graphs": "All"
+        },
+        "81": {
+          "anchor": 27,
+          "tags": [],
+          "name": "loc_3",
+          "mutex": 94,
+          "graphs": "All"
+        },
+        "82": {
+          "anchor": 14,
+          "tags": [],
+          "name": "loc_4",
+          "mutex": 94,
+          "graphs": "All"
+        },
+        "83": {
+          "anchor": 15,
+          "tags": [],
+          "name": "loc_6",
+          "mutex": 95,
+          "graphs": "All"
+        },
+        "84": {
+          "anchor": 29,
+          "tags": [],
+          "name": "loc_5",
+          "mutex": 95,
+          "graphs": "All"
+        },
+        "85": {
+          "anchor": 63,
+          "tags": [],
+          "name": "loc_9",
+          "mutex": 97,
+          "graphs": "All"
+        },
+        "86": {
+          "anchor": 17,
+          "tags": [],
+          "name": "loc_10",
+          "mutex": 97,
+          "graphs": "All"
+        },
+        "87": {
+          "anchor": 16,
+          "tags": [],
+          "name": "loc_8",
+          "mutex": 96,
+          "graphs": "All"
+        },
+        "88": {
+          "anchor": 31,
+          "tags": [],
+          "name": "loc_7",
+          "mutex": 96,
+          "graphs": "All"
+        },
+        "98": {
+          "anchor": 11,
+          "tags": [],
+          "name": "start_1",
+          "graphs": "All"
+        },
+        "99": {
+          "anchor": 28,
+          "tags": [],
+          "name": "start_2",
+          "graphs": "All"
+        },
+        "100": {
+          "anchor": 30,
+          "tags": [],
+          "name": "start_3",
+          "graphs": "All"
+        },
+        "101": {
+          "anchor": 32,
+          "tags": [],
+          "name": "start_4",
+          "graphs": "All"
+        },
+        "102": {
+          "anchor": 64,
+          "tags": [],
+          "name": "start_5",
+          "graphs": "All"
+        }
+      },
+      "mutex_groups": {
+        "78": {
+          "name": "mutex_1"
+        },
+        "94": {
+          "name": "mutex_2"
+        },
+        "95": {
+          "name": "mutex_3"
+        },
+        "96": {
+          "name": "mutex_4"
+        },
+        "97": {
+          "name": "mutex_5"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "8": {
+      "instances": {
+        "57": {
+          "pose": {
+            "trans": [
+              -5.270345,
+              6.9993954,
+              0.0
+            ],
+            "rot": {
+              "quat": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "inclusion": "Included",
+          "on_level": 1
+        },
+        "58": {
+          "pose": {
+            "trans": [
+              -5.3284593,
+              4.615279,
+              0.0
+            ],
+            "rot": {
+              "quat": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "inclusion": "Included",
+          "on_level": 1
+        },
+        "59": {
+          "pose": {
+            "trans": [
+              -5.16379,
+              2.2917967,
+              0.0
+            ],
+            "rot": {
+              "quat": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "inclusion": "Included",
+          "on_level": 1
+        },
+        "60": {
+          "pose": {
+            "trans": [
+              -4.9270864,
+              -0.16324782,
+              0.0
+            ],
+            "rot": {
+              "quat": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "inclusion": "Included",
+          "on_level": 1
+        },
+        "65": {
+          "pose": {
+            "trans": [
+              -4.97705,
+              -2.6487846,
+              0.0
+            ],
+            "rot": {
+              "quat": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "inclusion": "Included",
+          "on_level": 1
+        }
+      },
+      "name": "Default Scenario",
+      "parent_scenario": null
+    }
+  },
+  "model_descriptions": {
+    "62": {
+      "name": "TinyRobot",
+      "source": {
+        "Search": "Open-RMF/TinyRobot"
+      }
+    }
+  },
+  "robots": {
+    "62": {
+      "properties": {
+        "Collision": {
+          "config": {
+            "offset": [
+              0.0,
+              0.0
+            ],
+            "radius": 0.75
+          },
+          "kind": "Circle Collision"
+        },
+        "Mobility": {
+          "config": {
+            "bidirectional": true,
+            "rotation_center_offset": [
+              0.0,
+              0.0
+            ],
+            "rotational_speed": 1.0,
+            "translational_speed": 0.5
+          },
+          "kind": "Differential Drive"
+        },
+        "Power Dissipation": {
+          "config": {
+            "Ambient System": {
+              "idle_power": 20.0
+            },
+            "Mechanical System": {
+              "friction_coefficient": 0.2199999988079071,
+              "mass": 20.0,
+              "moment_of_inertia": 10.0
+            }
+          }
+        },
+        "Power Source": {
+          "config": {
+            "capacity": 24.0,
+            "charging_current": 5.0,
+            "voltage": 12.0
+          },
+          "kind": "Battery"
+        }
+      }
+    }
+  },
+  "model_instances": {
+    "57": {
+      "parent": 1,
+      "name": "TinyRobot_1",
+      "pose": {
+        "trans": [
+          -5.270345,
+          6.9993954,
+          0.0
+        ],
+        "rot": {
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "description": 62
+    },
+    "58": {
+      "parent": 1,
+      "name": "TinyRobot_2",
+      "pose": {
+        "trans": [
+          -5.3284593,
+          4.615279,
+          0.0
+        ],
+        "rot": {
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "description": 62
+    },
+    "59": {
+      "parent": 1,
+      "name": "TinyRobot_3",
+      "pose": {
+        "trans": [
+          -5.16379,
+          2.2917967,
+          0.0
+        ],
+        "rot": {
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "description": 62
+    },
+    "60": {
+      "parent": 1,
+      "name": "TinyRobot_4",
+      "pose": {
+        "trans": [
+          -4.9270864,
+          -0.16324782,
+          0.0
+        ],
+        "rot": {
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "description": 62
+    },
+    "65": {
+      "parent": 1,
+      "name": "TinyRobot_5",
+      "pose": {
+        "trans": [
+          -4.97705,
+          -2.6487846,
+          0.0
+        ],
+        "rot": {
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "description": 62
+    }
+  }
+}
